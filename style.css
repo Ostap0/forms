@@ -1,0 +1,199 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    padding: 22px;
+    
+}
+
+.field{
+display: flex;
+flex-direction: column;
+max-width: 300px;
+margin-bottom: 20px;
+}
+
+.field_tittle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%; 
+    letter-spacing: 0.01em; 
+    color: #6F7482;
+    display: inline-block;
+    margin-bottom: 2px;
+   
+}
+
+.field_input, .field_textarea, .field_select {
+    outline: none;
+    padding: 12px;
+    border: 0;
+    background: #F8FAFC;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #333
+ 
+}
+.field_sound_input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    width: 300px
+}
+
+.field_input::placeholder{
+    color: #b8bcca;
+}
+
+.field_textarea{
+    min-height: 100px;
+    resize: vertical;
+}
+
+button{
+    background:rgb(28, 56, 65);
+    margin-top: 50px;
+    display: inline-block;
+    color: rgb(250, 249, 249);
+    cursor: pointer;
+    border-radius: 3px;
+    outline: 0;
+    border: 0;
+    padding: 13px 24px;
+}
+
+.checkbox{
+align-items: center;
+display: flex;
+gap: 10px;
+
+}
+
+.checkbox_text{
+  
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    color: #3f3f3f;
+}
+
+.checkbox_input{
+opacity: 0;
+}
+
+.checkbox_mark{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #3B4256;
+    border-radius: 3px;
+    position: relative;
+}
+
+.checkbox_mark::after{
+    color: #F8FAFC;
+    content: '✓';
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    opacity: 0;
+    transition: 0.2s all ease-in-out;
+}
+
+    .checkbox_input:checked ~ .checkbox_mark::after{
+    opacity: 1;
+    }
+
+    .checkbox_input:checked ~ .checkbox_mark{
+       background: #3B4256;
+    }
+
+ 
+ .radio{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+ }
+
+ .radio_text{
+    font-size: 16px;
+    line-height: 140%;
+    width: 70px;
+    color: #3B4256;
+    font-weight: 400;
+    
+ }
+
+ .radio_input{   
+   opacity: 0;
+ }
+
+ .radio_mark{
+
+    width: 20px;
+    height: 20px;
+    border: 2px solid #B8BCCA;
+    border-radius: 22px;
+    position: relative;
+ }
+
+ .radio_mark::after{
+    position:absolute;
+    left: 8.33%;
+    right: 8.33%;
+    top: 8.33%;
+    bottom: 8.33%;
+ }
+
+ .radio_input:checked ~ .radio_mark::after{   
+    opacity: 1;
+    
+  }
+  .radio_input:checked ~ .radio_mark{   
+    background: #3B4256;
+    
+  }
+
+ .switch_input{
+   opacity: 0;
+ }
+
+ .switch{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+ }
+ .switch_mark{
+    display: inline-block;
+    width: 51px;
+    height: 31px;
+    background: #b8bcca;
+    position: relative;
+    border-radius: 25px;
+    transition: .2s all ease-out;
+ }
+ .switch_mark::after{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left: 0%;
+    background: #fff;
+    content: "";
+    border: 2px solid #b8bcca;
+    transition: .2 all ease-out;
+
+ }
+
+
+
+
+ 
